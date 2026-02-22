@@ -2,6 +2,7 @@ apiVeriosn: v1
 kind: Secret
 metadata:
   name: mysql
+  namespace: roboshop
   labels:
     component: mysql
     project: roboshop
