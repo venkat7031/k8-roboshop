@@ -38,7 +38,7 @@ spec:
       containers:
       - name: mysql
         image: venky7031/mysql:v1
-      env:
+        env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
