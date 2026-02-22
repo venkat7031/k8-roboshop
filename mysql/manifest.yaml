@@ -39,8 +39,8 @@ spec:
       - name: mysql
         image: venky7031/mysql:v1
         envFrom:
-        - secretRef:
-          name: mysql
+          - secretRef:
+            name: mysql
 ---
 apiVersion: v1
 kind: Service
