@@ -36,8 +36,14 @@ spec:
         tier: database
     spec:
       containers:
-      - name: nginx
+      - name: mysql
         image: venky7031/mysql:v1
+      env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql
+              key: MYSQL_ROOT_PASSWORD
 
 ---
 apiVersion: v1
